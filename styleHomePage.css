@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+.logo {
+    width: 150px;
+    height: 50px;
+}
+
+
+
+section nav {
+    width: 100%;
+    height: 80px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #070707;
+    background-color: #baabee;
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+}
+
+section nav .logo img {
+    width: 100%;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+section nav ul {
+    list-style: none;
+}
+
+section nav li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 30px;
+}
+
+section nav a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 10px;
+    color: black;
+}
+
+
+section nav li a:hover {
+    color: palevioletred;
+}
+
+
+.home {
+    background-image: linear-gradient(rgb(255 255 255/70%), rgb(255 246 248/70%)), url(bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .main {
+    display: flex;
+    align-items: center;
+}
+
+.home .main_tag {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.home .main_tag h1 {
+    color: palevioletred;
+    font-size: 55px;
+    text-align: left;
+}
+
+.home .main_tag h1 span {
+    color: blueviolet;
+}
+
+.home .main_tag p {
+    width: 100%; /* Lebar penuh untuk mendukung responsif */
+    margin-left: 5px;
+    font-size: 20px;
+    margin: 2px;
+    padding: 1px;
+    text-align: justify;
+}
+
+.home .main_tag .main_btn {
+    background-color: #0766ad;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 20px;
+    left: 25px;
+    z-index: 2;
+    display: inline-block;
+}
+
+.home .main_tag .main_btn:hover {
+    color: #0f0e0e;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main .hidden {
+    display: none;
+}
+
+.home .main_image img {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    margin-top: 5px;
+    margin-left: 90px; /* Untuk memposisikan ke kanan */
+    margin-right: 5px;
+}
+
+
+
+
+
+
+@media (max-width:991px){
+    html {
+        font-size: 16px;
+
+    }
+    .home .main_tag h1 {
+        font-size: 20px;
+    }
+    section nav .logo img {
+        width: 80%;
+        cursor: pointer;
+        margin: 5px 0;
+    }
+    section nav a {
+    
+        font-size: 16px;
+        padding: 0px 8px;
+       
+    }
+    .home .main_tag p {
+        width: 80%; /* Lebar penuh untuk mendukung responsif */
+        margin-left: 5px;
+        font-size: 14px;
+        margin: 2px;
+        padding: 1px;
+    }
+    .home .main_image img {
+        width: 80%;
+        height: 80%;
+        max-width: 300px;
+        max-height: 350px;
+        margin-top: 5px;
+        margin-left: 70px; /* Untuk memposisikan ke kanan */
+        margin-right: 5px;
+    }
+    .home .main_tag .main_btn {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width:768px){
+    
+    .home .main_tag h1 {
+        font-size: 15px;
+    }
+    section nav .logo img {
+        width: 60%;
+        cursor: pointer;
+        margin: 5px 0;
+    }
+    section nav a {
+    
+        font-size: 14px;
+        padding: 0px 8px;
+       
+    }
+    .home .main_tag p {
+        width: 100%; /* Lebar penuh untuk mendukung responsif */
+        margin-left: 5px;
+        font-size: 10.3px;
+        margin: 2px;
+        padding: 1px;
+    }
+    .home .main_image img {
+        width: 60%;
+        height: 60%;
+        max-width: 300px;
+        max-height: 350px;
+        margin-top: 5px;
+        margin-left: 70px; /* Untuk memposisikan ke kanan */
+        margin-right: 5px;
+    }
+    .home .main_tag .main_btn {
+        font-size: 8px;
+    }
+
+}
+
+@media (max-width:468px){
+    
+    .home .main_tag h1 {
+        font-size: 15px;
+        width: 90%;
+        margin-top: 4em;
+    }
+    section nav .logo img {
+        width: 50%;
+        cursor: pointer;
+        margin: 5px 0;
+    }
+    section nav a {
+    
+        font-size: 12px;
+        padding: 0px 8px;
+       
+    }
+    .home .main_tag p {
+        width: 100%; /* Lebar penuh untuk mendukung responsif */
+        margin-left: 5px;
+        font-size: 10px;
+        margin: 2px;
+        padding: 1px;
+    }
+    .home .main_image img {
+        width: 50%;
+        height: 50%;
+        max-width: 300px;
+        max-height: 350px;
+        margin-top: 5px;
+        margin-left: 70px; /* Untuk memposisikan ke kanan */
+        margin-right: 5px;
+    }
+    .home .main_tag .main_btn {
+        font-size: 8px;
+    }
+
+}
