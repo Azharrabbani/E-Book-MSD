@@ -6,4 +6,4 @@ DhandiAdam - https://github.com/DhandiAdam
 
 Ghunaisa - https://github.com/Ghumaisa
 
-Program ini merupakan toko buku online yang memungkinkan pengguna untuk melihat-lihat dan membeli buku melalui website. Situs web ini dibuat dengan menggunakan HTML untuk struktur konten, CSS untuk desain dan tata letak, dan JavaScript untuk interaktivitas dan fungsionalitas yang dinamis.
+This program is an online bookstore that allows users to browse and purchase books through the website. This website was created using HTML for the structure , CSS for design and layout, and JavaScript for interactivity and dynamic functionality. and JavaScript for dynamic interactivity and functionality.
